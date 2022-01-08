@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_ans"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp"
+    android:layout_margin="@dimen/_4sdp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:id="@+id/rl_ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginRight="@dimen/_10sdp"
+            android:id="@+id/tv_ans_no"
+            android:visibility="visible"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:textSize="@dimen/_14sdp"
+            android:background="@drawable/badge_circle"
+            android:backgroundTint="@color/colorJ"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="(A)"/>
+
+        <WebView
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/tv_ans_no"
+            android:id="@+id/ans_body"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            tools:ignore="WebViewLayout" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

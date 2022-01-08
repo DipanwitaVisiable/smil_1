@@ -1,0 +1,81 @@
+<resources>
+
+    <string name="youAreNotUpdatedTitle">Update Available</string>
+    <string name="youAreNotUpdatedMessage">A new version of S M I Liluah is available. Please update latest version now</string>
+    <string name="youAreNotUpdatedMessage1"> now</string>
+    <string name="update">Update</string>
+    <string name="app_name">Sudhir Memorial Institute Liluah</string>
+    <string name="app_title_name">S M I Liluah</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_book_manage">BookManageActivity</string>
+    <string name="title_activity_employee_manage">EmployeeManageActivity</string>
+    <string name="title_activity_time_table">TimeTableActivity</string>
+    <string name="title_activity_gps">GPSActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_">ActivityActivity</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="title_activity_home_work">HomeWorkActivity</string>
+    <string name="title_activity_syllabus">SyllabusActivity</string>
+    <string name="title_activity_request">RequestActivity</string>
+    <string name="title_activity_class_work">ClassWorkActivity</string>
+    <string name="title_activity_teacher_calling">TeacherCallingActivity</string>
+    <string name="title_activity_work">WorkActivity</string>
+    <string name="title_activity_notice">NoticeActivity</string>
+    <string name="title_activity_bulletins">BulletinsActivity</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="title_activity_account">AccountActivity</string>
+    <string name="title_activity_advertisement">AdvertisementActivity</string>
+    <string name="title_activity_teacher_class_work">TeacherClassWorkActivity</string>
+    <string name="title_activity_teacher_home_work">TeacherHomeWorkActivity</string>
+    <string name="title_activity_teacher_notice">TeacherNoticeActivity</string>
+    <string name="title_activity_teacher_syllabus">TeacherSyllabus</string>
+    <string name="title_activity_examination">ExaminationActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_view_request">ViewRequestActivity</string>
+    <string name="title_activity_attendance_late_reason">AttendanceLateReasonActivity</string>
+    <string name="privacyPolicy1">1. Personally identifiable information of the users are kept strictly confidential and never shared with any 3rd party agencies.</string>
+    <string name="privacyPolicy2">2. Terms and clauses of the admission are strictly governed by the administrative authorities.</string>
+    <string name="privacyPolicy3">3. The admission policy is strictly private and will never be disclosed by school authorities.</string>
+    <string name="title_activity_doctor">List of Doctor</string>
+    <string name="title_activity_pathology">List of Pathology</string>
+    <string name="title_activity_medical">List of Medical Store</string>
+    <string name="title_activity_first_term">FirstTermResult</string>
+    <string name="title_activity_second_term">SecondTermResult</string>
+    <string name="title_activity_pathology_service">Pathology Services</string>
+    <string name="title_activity_medi_chamber">Medical Chamber</string>
+    <string name="title_activity_medi_department">Medical Department</string>
+    <string name="title_activity_medi_store_details">Medical Store Details</string>
+    <string name="title_activity_health_card">HealthCard</string>
+    <string name="title_activity_terms_condition">Terms &amp; Conditions</string>
+    <string name="title_activity_bdm">PTM</string>
+    <string name="title_activity_new_bus_map">Map</string>
+    <string name="rating_content">Class room are closed \nStudents may not be in uniform\nBut teaching is on...\nThanks to our Teachers and staffs for working harder at this time.</string>
+    <string name="rating_content_2">Class room are closed. Students may not be in uniform, But teaching is on...\nThanks to our Teachers and staffs for working harder at this time.</string>
+    <string name="force_logout">You have already logged in, in another device with this id. Please click OK and login again.</string>
+</resources>

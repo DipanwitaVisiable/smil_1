@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<android.support.v7.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/cd_week_days"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="3dp"
+android:elevation="5dp"
+app:cardCornerRadius="5dp"
+app:cardElevation="3dp"
+app:cardPreventCornerOverlap="false"
+app:cardUseCompatPadding="true">
+<LinearLayout
+    android:id="@+id/ll_background"
+    android:layout_gravity="center"
+    android:background="@drawable/monday"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    &lt;!&ndash;<ImageView
+        android:id="@+id/days_image"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        tools:ignore="ContentDescription" />&ndash;&gt;
+    <TextView
+        android:id="@+id/days_image"
+        android:text="M"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:padding="13dp"
+        tools:ignore="ContentDescription"
+        android:background="@drawable/circle_white_button"
+        android:layout_centerVertical="true" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_days_name"
+            android:layout_toLeftOf="@+id/study_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Subject name"
+            android:textSize="@dimen/_15sdp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/tv_topics"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/arrow"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_right_arrow_white"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+</LinearLayout>
+
+</android.support.v7.widget.CardView>-->
+
+
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cd_week_days"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_120sdp"
+    android:layout_margin="3dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:id="@+id/ll_background"
+        android:gravity="center"
+        android:background="@drawable/monday"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!--<ImageView
+            android:id="@+id/days_image"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            tools:ignore="ContentDescription" />-->
+        <TextView
+            android:id="@+id/days_image"
+            android:text="M"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:padding="13dp"
+            tools:ignore="ContentDescription"
+            android:background="@drawable/circle_white_button"
+            android:layout_centerVertical="true" />
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_days_name"
+                android:layout_toLeftOf="@+id/study_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="Subject name"
+                android:textSize="@dimen/_15sdp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/tv_topics"
+                android:visibility="gone"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/arrow"
+            android:visibility="gone"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_right_arrow_white"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

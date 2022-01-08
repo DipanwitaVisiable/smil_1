@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorAccent"
+            android:elevation="4dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/l1_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/text_no_of_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="0/0"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/iv_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_play"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/iv_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/colorPrimary"
+                android:src="@drawable/ic_pause_circle_white"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textTimer"
+                android:layout_toRightOf="@+id/iv_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:text=""
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/test_finish_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhite"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="finishTest"
+                android:text="Finish"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <!--<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end">
+
+            <ImageButton
+                android:id="@+id/iv_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_menu" />
+        </RelativeLayout>-->
+
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@+id/l1_top"
+        android:id="@+id/try_again_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="top|center_horizontal"
+        android:text="try Again, tap any where"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_below="@+id/l1_top"
+        android:id="@+id/no_data_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/switch_user"
+        android:visibility="gone"
+        android:contentDescription="TODO" />
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_below="@+id/l1_top"
+        android:layout_above="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rl_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <HorizontalScrollView
+                android:id="@+id/scroll_indicator"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:scrollbars="none">
+                <com.library.NavigationBar
+                    android:id="@+id/navBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    app:central_line_color="@color/colorBlack"
+                    app:central_line_height="1dp"
+                    app:enable_border="true"
+                    app:only_border="false"
+                    app:tab_indicator_color="@color/colorPresent"
+                    app:tab_padding="20dp"
+                    app:tab_strok_width="3dp"
+                    app:tab_text_size="14sp" />
+            </HorizontalScrollView>
+
+            <!--<androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_below="@+id/scroll_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />-->
+
+            <com.example.crypedu.Helper.NonSwipeableViewPager
+                android:id="@+id/viewpager"
+                android:layout_below="@+id/scroll_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/ans_load"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+        <Button
+            android:id="@+id/pre_ans"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:backgroundTint="@color/colorJ"
+            android:background="@drawable/rounded_corner_button"            android:text="Previous"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textSize="14sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            tools:ignore="RtlHardcoded" />
+        <Button
+            android:id="@+id/submit_ans"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="end"
+            android:background="@drawable/rounded_corner_button"
+            android:text="Save &amp; Next"
+            android:textStyle="bold"
+            android:textColor="#135080"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textAllCaps="false"
+            android:visibility="visible"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp" />
+    </RelativeLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/av_caf_loader"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        app:indicatorColor="@color/colorAccent"
+        app:indicatorName="BallScaleRippleMultipleIndicator" />
+
+
+</RelativeLayout>

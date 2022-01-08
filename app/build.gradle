@@ -1,0 +1,131 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '28.0.3'
+    ndkVersion "23.0.7599858"
+
+    defaultConfig {
+        applicationId "com.activity.smi"
+        minSdkVersion 21
+        targetSdkVersion 30
+        multiDexEnabled true
+        versionCode 94
+        versionName "62.21"
+        ndk {
+//            abiFilters "armeabi-v7a", "x86"
+            abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
+        }
+        //here put it in the section where you have the version stuff
+        setProperty("archivesBaseName", "smililuah")
+        useLibrary 'org.apache.http.legacy'
+
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/maven/pom.properties'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+
+    }
+
+/*    signingConfigs {
+        release {
+            storeFile file("E:/Important Files/KeyStoreFile/Crypedu.jks")
+            storePassword "password"
+            keyAlias "crypedu"
+            keyPassword "password"
+        }
+    }*/
+
+    buildTypes {
+      debug {
+        minifyEnabled false
+        proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+      }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //             signingConfig signingConfigs.release
+        }
+    }
+
+  bundle {
+    density {
+      // Different APKs are generated for devices with different screen densities; true by default.
+      enableSplit true
+    }
+    abi {
+      // Different APKs are generated for devices with different CPU architectures; true by default.
+      enableSplit true
+    }
+    language {
+      // This is disabled so that the App Bundle does NOT split the APK for each language.
+      // We're gonna use the same APK for all languages.
+      enableSplit false
+    }
+  }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+  testImplementation 'junit:junit:4.12'
+    //noinspection GradleCompatible
+    implementation 'androidx.core:core:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.squareup:android-times-square:1.6.5@aar'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+    implementation 'com.nineoldandroids:library:2.4.0'
+//    implementation 'com.github.npanigrahy:Custom-Calendar-View:v1.0'
+//    implementation 'org.jsoup:jsoup:1.11.3'
+    implementation 'org.jsoup:jsoup:1.13.1'
+    implementation 'me.leolin:ShortcutBadger:1.1.16@aar'
+    implementation 'com.mcxiaoke.volley:library:1.0.19'//Volley
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+    implementation 'com.google.firebase:firebase-config:16.3.0'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.github.drawers:SpinnerDatePicker:1.0.6'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    implementation 'at.blogc:expandabletextview:1.0.5' //Expandable Text view
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'// dimen- to handle screen size
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1' //For Random color
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')//Youtube
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0' //For Serializable name
+    implementation 'com.ashutosh.progress-nevigation-bar:library:1.0.0' // horizontal navigation in quiz section
+    implementation 'com.wang.avi:library:2.1.3'//AvLoader
+    implementation 'com.github.PhilJay:MPAndroidChart:v2.2.4'//Piechart
+    implementation 'com.jsibbold:zoomage:1.2.0' //For zoom image
+    implementation'org.apache.httpcomponents:httpmime:4.3.1'  //For HttpMultipartMode
+    implementation 'com.google.android:flexbox:2.0.1'
+    implementation "com.google.crypto.tink:tink-android:1.5.0"
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:chromecast-sender:0.23'
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+    implementation 'com.google.android.gms:play-services-vision:15.0.2' //for QR code scanner
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+}
+apply plugin: 'com.google.gms.google-services'
+
+com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true

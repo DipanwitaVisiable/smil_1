@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_doctor_chamber">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/back_of_single_doctor">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_doctor_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_doctor" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_doctor_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_doctor_image"
+                android:gravity="center"
+                android:text="Pathology Name"
+                android:textColor="@color/colorTeacherCalling"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_doctor_degree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_doctor_name"
+                android:layout_toRightOf="@+id/iv_doctor_image"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:text="Pathology Phone no"
+                android:textColor="@color/colorBlack"
+                android:layout_toEndOf="@+id/iv_doctor_image" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_doctor_cat_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_doctor_degree"
+                android:layout_toRightOf="@+id/iv_doctor_image"
+                android:gravity="center"
+                android:text="Pathology Address"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pathology_address">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/doctor_single_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"/>
+            <!--<ListView
+                android:id="@+id/doctor_single_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"/>-->
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

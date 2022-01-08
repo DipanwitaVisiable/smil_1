@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_background"
+        android:gravity="center"
+        android:background="@drawable/button_shape_demo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp">
+
+        <TextView
+            android:id="@+id/tv_days_name"
+            android:layout_centerInParent="true"
+            android:text="Subject name"
+            android:textSize="@dimen/_15sdp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

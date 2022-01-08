@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/spinner_theme"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/subject_TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:textSize="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:text="Subject"
+        android:textColor="@color/colorTeacherCalling"
+        android:textStyle="bold"
+        android:paddingRight="0dp"
+        android:paddingEnd="0dp"/>
+
+    <View
+        android:layout_width="0.2dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/periodic_TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Periodic Test"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="0.2dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/note_book_TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Note Book"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="0.2dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sub_enrichment_TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Subject Enrichment"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="0.2dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/half_yearly_TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Half Yearly"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="0.2dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/marks_obtained_TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Marks Obtained"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="0.2dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/grade_TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Grade"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

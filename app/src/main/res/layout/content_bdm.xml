@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.crypedu.Activity.BDMActivity"
+    tools:showIn="@layout/activity_bdm">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_list_of_meetings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Parent Meeting details:-"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/choose_date"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_list_of_meetings"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:hint="Please Choose a Date"
+        android:background="@drawable/message_back"
+        android:focusable="false"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+        android:drawableStart="@android:drawable/ic_menu_my_calendar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/parentMeeting_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/choose_date"
+        android:clipToPadding="true"
+        android:orientation="vertical"/>
+    <LinearLayout
+        android:id="@+id/linearLayout_no_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/choose_date"
+        android:gravity="center"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Oops! No List is Available."
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

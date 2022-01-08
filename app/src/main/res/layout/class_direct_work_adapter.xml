@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="3dp"
+    android:padding="3dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:visibility="visible"
+            android:text="Subject"
+            android:id="@+id/class_name_textView"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/subject_textView"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/teachers_nam_textView"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/chapter_textView"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:background="#4D6B83"
+  android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/tv_store_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/_30sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:ellipsize="end"
+    android:gravity="center_horizontal"
+    android:maxLines="2"
+    android:text="STORE NAME"
+    android:textAlignment="center"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:textSize="@dimen/_17sdp"
+    android:textStyle="bold" />
+
+  <TextView
+    android:id="@+id/tv_owner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:text="Owner Name"
+    android:layout_below="@+id/tv_store_name"
+    android:layout_marginBottom="@dimen/_35sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:textSize="@dimen/_12sdp"
+    android:textAllCaps="false"
+    android:textStyle="bold"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:gravity="center_horizontal" />
+
+
+  <RelativeLayout
+    android:id="@+id/rl_item_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/tv_owner"
+    android:layout_marginBottom="@dimen/_minus60sdp"
+    android:background="@drawable/holiday_button_theme"
+    android:backgroundTint="@color/white"
+    android:orientation="horizontal">
+
+
+    <TextView
+      android:id="@+id/tv_address"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginLeft="@dimen/_40sdp"
+      android:layout_marginTop="@dimen/_10sdp"
+      android:layout_marginRight="@dimen/_40sdp"
+      android:gravity="center_horizontal"
+      android:text="Address"
+      android:textColor="@color/colorTeacherCalling"
+      android:textSize="@dimen/_11sdp"
+      android:textStyle="bold" />
+
+    <TextView
+      android:id="@+id/tv_email"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/tv_address"
+      android:layout_centerHorizontal="true"
+      android:layout_marginLeft="@dimen/_20sdp"
+      android:layout_marginTop="@dimen/_10sdp"
+      android:layout_marginRight="@dimen/_20sdp"
+      android:gravity="center_horizontal"
+      android:text="Email:"
+      android:textColor="@color/colorTeacherCalling"
+      android:textSize="@dimen/_11sdp"
+      android:textStyle="bold" />
+
+    <TextView
+      android:id="@+id/tv_phone"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/tv_email"
+      android:layout_centerHorizontal="true"
+      android:layout_marginLeft="@dimen/_20sdp"
+      android:layout_marginTop="@dimen/_10sdp"
+      android:layout_marginRight="@dimen/_20sdp"
+      android:gravity="center_horizontal"
+      android:text="Phone No. :"
+      android:textColor="@color/colorTeacherCalling"
+      android:textSize="@dimen/_11sdp"
+      android:textStyle="bold" />
+
+    <TextView
+      android:id="@+id/tv_discount"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/tv_phone"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="@dimen/_20sdp"
+      android:text="You will get 30% Discount"
+      android:textColor="@color/colorGrey"
+      android:textSize="@dimen/_11sdp" />
+
+    <EditText
+      android:id="@+id/et_amount"
+      android:layout_width="@dimen/_100sdp"
+      android:layout_height="@dimen/_60sdp"
+      android:layout_below="@+id/tv_discount"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="@dimen/_10sdp"
+      android:background="@drawable/background_border_blue"
+      android:gravity="center"
+      android:hint="Enter amount"
+      android:inputType="number"
+      android:scrollbars="vertical"
+      android:textAlignment="center" />
+
+
+    <Button
+      android:id="@+id/btn_proceed"
+      android:layout_width="@dimen/_100sdp"
+      android:layout_height="@dimen/_25sdp"
+      android:layout_below="@+id/et_amount"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="@dimen/_10sdp"
+      android:background="@drawable/rounded_corner_button"
+      android:backgroundTint="#4D6B83"
+      android:text="Proceed"
+      android:textAllCaps="false"
+      android:textColor="@color/white"
+      android:textSize="@dimen/_12sdp"
+      />
+
+
+  </RelativeLayout>
+  <ProgressBar
+    android:id="@+id/pb_loader"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:layout_centerInParent="true">
+  </ProgressBar>
+
+</RelativeLayout>

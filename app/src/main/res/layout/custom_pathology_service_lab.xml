@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout_select_pathology"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:background="@drawable/back_of_single_doctor">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_pathology_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:src="@drawable/care" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_pathology_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="Pathology Service Name"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="50"
+            android:weightSum="100">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:layout_weight="50"
+                android:text="Discount: "
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorBlack"
+                tools:ignore="RtlCompat" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_pathology_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_weight="50"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAbsent"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

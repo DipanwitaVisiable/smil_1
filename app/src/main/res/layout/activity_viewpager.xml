@@ -1,0 +1,56 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:fitsSystemWindows="true"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:background="@android:color/black"
+	android:theme="@style/AppTheme.TransparentTheme"
+	tools:context="com.example.crypedu.Activity.ViewPagerActivity">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@android:color/transparent"
+		android:theme="@style/AppTheme.AppBarOverlay">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?android:attr/actionBarSize"
+			android:background="@android:color/transparent"
+			app:elevation="0dp"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+	</com.google.android.material.appbar.AppBarLayout>
+    <!-- ExtendedViewPager is a custom view and must be referred to by its full package name in XML -->
+	<com.example.crypedu.Activity.ExtendedViewPager
+	    android:id="@+id/view_pager"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" />
+	<ProgressBar
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:id="@+id/image_load"
+		android:visibility="gone"/>
+	<!--<TextView
+		android:id="@+id/lbl_count"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="Item"
+		android:textColor="@android:color/white"
+		android:textSize="16dp"
+		android:textStyle="bold" />-->
+	<!--<TextView
+	    android:text="@string/swipe_viewpager"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:padding="5dp"
+	    android:layout_marginBottom="10dp"
+	    android:background="@android:color/black"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_menu_back"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.crypedu.Activity.BulletinsActivity"
+    tools:showIn="@layout/activity_bulletins">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".97"
+        android:dividerHeight="0dp"
+        android:divider="#bebebe"
+        style="@style/scrollbar_type"
+        android:id="@+id/bulletins_listView"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".03"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:id="@+id/copyRight_textView"/>
+</LinearLayout>

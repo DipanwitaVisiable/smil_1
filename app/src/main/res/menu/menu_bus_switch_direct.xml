@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bus_menu"
+        android:title="Bus"
+        android:icon="@drawable/bus_switch"
+        app:showAsAction="always"
+        android:visible="true"
+        />
+
+</menu>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ca6b1a</color>
+    <color name="colorPrimaryDark">#ca6b1a</color>
+    <color name="colorAccent">#ca6b1a</color>
+    <color name="black_overlay">#ca6b1a</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorAbsent">#FF0000</color>
+    <color name="colorHoliday">#564dca</color>
+    <color name="colorLeave">#e79e24</color>
+    <color name="colorBlack">#333333</color>
+    <color name="colorPresent">#008000</color>
+    <color name="colorProfile">#fd0864</color>
+    <color name="colorAttendance">#8bd53f</color>
+    <color name="colorTimeTable">#ff7200</color>
+    <color name="colorHomeWork">#4a03ff</color>
+    <color name="colorResult">#ff2f2f</color>
+    <color name="colorActivity">#ffce09</color>
+    <color name="colorClassWork">#01925d</color>
+    <color name="colorTeacherCalling">#005cff</color>
+    <color name="colorOnlineClasses">#3993C2</color>
+    <color name="colorNoticeBorder">#4a2010</color>
+
+    <color name="colorA">#e7e087</color>
+    <color name="colorB">#f88368</color>
+    <color name="colorC">#fe68ca</color>
+    <color name="colorD">#ff9a6f</color>
+    <color name="colorE">#56acf9</color>
+    <color name="colorF">#e7beff</color>
+    <color name="colorG">#7ffcd2</color>
+    <color name="colorH">#c55050</color>
+    <color name="colorI">#f47c7c</color>
+    <color name="colorJ">#4d8ab6</color>
+    <color name="colorK">#a4fbef</color>
+    <color name="colorL">#da4545</color>
+    <color name="colorM">#ffbe5e</color>
+    <color name="colorN">#e174aa</color>
+    <color name="colorO">#f3ca6b</color>
+    <color name="colorP">#16bfbf</color>
+    <color name="colorQ">#dabeff</color>
+    <color name="colorR">#73b092</color>
+    <color name="colorS">#b6da98</color>
+    <color name="colorT">#e58966</color>
+    <color name="colorU">#e8bc75</color>
+    <color name="colorV">#fbec78</color>
+    <color name="colorW">#df7979</color>
+    <color name="colorX">#c171fa</color>
+    <color name="colorY">#faa972</color>
+    <color name="colorZ">#8ffeca</color>
+
+    <color name="colorNotice">#3ec8ca</color>
+    <color name="colorBulletins">#68bc97</color>
+    <color name="colorSyllabus">#e288fc</color>
+    <color name="colorAccount">#9900cc</color>
+    <color name="colorRequest">#f53ef7</color>
+    <color name="colorReset">#79013c</color>
+    <color name="colorLogout">#edb799</color>
+    <color name="colorTransportation">#e5b700</color>
+    <color name="colorLibrary">#a7f285</color>
+    <color name="colorMeetings">#a6f2c5</color>
+
+<!--
+    <color name="colorDiamondWhite">#e9f1f9</color>
+-->
+    <color name="colorDiamondWhite">#c6c3c3</color>
+    <color name="colorTransparent">#0000ffff</color>
+    <color name="colorTransparentMediWallet">#72dfab8b</color>
+    <color name="colorExamination">#ff6363</color>
+    <color name="colorRed">#f00</color>
+    <color name="lateReasonBtnColor">#564dca</color>
+    <color name="colorGrey">#757677</color>
+    <color name="black_color">#000000</color>
+    <color name="incorrect">#f44336</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+</resources>

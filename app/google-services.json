@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "546316843492",
+    "firebase_url": "https://crypedu.firebaseio.com",
+    "project_id": "crypedu",
+    "storage_bucket": "crypedu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546316843492:android:9be8e31b69cc7f1d",
+        "android_client_info": {
+          "package_name": "com.activity.smi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546316843492-pjcvh33ik56b889defig1ssk2lnqajo1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPlu3Sr2QHgetqmUGUdP6gi6r0xQXH_SE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

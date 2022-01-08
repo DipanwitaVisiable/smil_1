@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/cd_period"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_margin="3dp"
+  android:elevation="5dp"
+  app:cardCornerRadius="5dp"
+  app:cardElevation="3dp"
+  app:cardPreventCornerOverlap="false"
+  app:cardUseCompatPadding="true">
+
+  <RelativeLayout
+    android:id="@+id/rl_item_background"
+    android:background="#4D6B83"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/tv_serial_no"
+      android:text="01"
+      android:gravity="center"
+      android:background="@drawable/rounded_corner_button"
+      android:layout_centerVertical="true"
+      android:textSize="@dimen/_15sdp"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+      android:layout_marginLeft="@dimen/_5sdp"
+      android:layout_width="@dimen/_45sdp"
+      android:layout_height="@dimen/_45sdp"
+      android:layout_gravity="center_horizontal" />
+
+    <TextView
+      android:id="@+id/tv_assignment_topic_name"
+      android:layout_marginTop="@dimen/_10sdp"
+      android:layout_toRightOf="@+id/tv_serial_no"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:text="Subject name"
+      android:layout_marginBottom="@dimen/_5sdp"
+      android:maxLines="2"
+      android:ellipsize="end"
+      android:textSize="@dimen/_14sdp"
+      android:textAllCaps="false"
+      android:textStyle="bold"
+      android:textAlignment="center"
+      android:textColor="@color/white"
+      android:layout_marginRight="@dimen/_5sdp"
+      android:gravity="center_horizontal" />
+
+    <RelativeLayout
+      android:id="@+id/rl_date_time"
+      android:layout_below="@+id/tv_assignment_topic_name"
+      android:layout_toRightOf="@+id/tv_serial_no"
+      android:layout_marginLeft="@dimen/_10sdp"
+      android:layout_marginRight="@dimen/_10sdp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+      <TextView
+        android:id="@+id/tv_assignment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Date- 12/02/2021"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:textSize="@dimen/_12sdp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:gravity="center_horizontal" />
+      <TextView
+        android:id="@+id/tv_assignment_start_time"
+        android:layout_below="@+id/tv_assignment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start: 01:00 pm"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white" />
+      <TextView
+        android:id="@+id/tv_assignment_end_time"
+        android:layout_below="@+id/tv_assignment_date"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End: 02:30 pm"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white"
+        />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+      android:layout_below="@+id/rl_date_time"
+      android:layout_toRightOf="@+id/tv_serial_no"
+      android:layout_marginBottom="@dimen/_10sdp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+          android:layout_marginLeft="@dimen/_5sdp"
+          android:layout_marginRight="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+          android:id="@+id/btn_reply"
+          android:text="Reply"
+          android:layout_marginLeft="@dimen/_10sdp"
+          android:textColor="@color/black"
+          android:layout_marginTop="@dimen/_5sdp"
+          android:textSize="@dimen/_11sdp"
+          android:textStyle="bold"
+          android:textAllCaps="false"
+          android:background="@drawable/rounded_corner_button"
+          android:layout_width="@dimen/_60sdp"
+          android:layout_height="@dimen/_20sdp"/>
+        <Button
+          android:id="@+id/btn_view"
+          android:layout_marginLeft="@dimen/_15sdp"
+          android:layout_toRightOf="@+id/btn_reply"
+          android:text="View"
+          android:textColor="@color/black"
+          android:textSize="@dimen/_11sdp"
+          android:textStyle="bold"
+          android:textAllCaps="false"
+          android:layout_marginTop="@dimen/_5sdp"
+          android:background="@drawable/rounded_corner_button"
+          android:layout_width="@dimen/_60sdp"
+          android:layout_height="@dimen/_20sdp"/>
+
+        <Button
+            android:id="@+id/btn_history"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_toRightOf="@+id/btn_view"
+            android:text="History"
+            android:clickable="false"
+            android:enabled="false"
+            android:alpha="0.3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/rounded_corner_button"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_20sdp"/>
+      </LinearLayout>
+
+    </RelativeLayout>
+  </RelativeLayout>
+
+
+  <!--<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+      android:background="#52738E"
+      android:layout_marginBottom="@dimen/_10sdp"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/_40sdp"/>
+    <View
+      android:background="#417FB1"
+      android:layout_marginBottom="@dimen/_10sdp"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/_40sdp"/>
+    <View
+      android:background="#0F70BD"
+      android:layout_marginBottom="@dimen/_10sdp"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/_40sdp"/>
+    <View
+      android:background="#06589A"
+      android:layout_marginBottom="@dimen/_10sdp"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/_40sdp"/>
+    <View
+      android:background="#0E4168"
+      android:layout_marginBottom="@dimen/_10sdp"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/_40sdp"/>
+  </LinearLayout>-->
+
+</androidx.cardview.widget.CardView>
+
+

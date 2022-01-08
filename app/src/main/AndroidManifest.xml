@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.activity.smi">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature android:name="android.hardware.location.gps" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/smi_logo"
+        android:label="@string/app_title_name"
+        tools:replace="android:label"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/smi_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.example.crypedu.Activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--
+<meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDDtMyAnTxUxT1TpAlU5GgXUjwweJhP8_w" />
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCapsUSYPk7AfTCyD4E91O0d1un-kH4WbY" /> <!-- <meta-data -->
+        <!-- android:name="com.google.android.gms.version" -->
+        <!-- android:value="@integer/google_play_services_version" /> -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- android:value="AIzaSyCapsUSYPk7AfTCyD4E91O0d1un-kH4WbY" /> -->
+        <service
+            android:name=".BroadcastService"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.example.crypedu.Activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.ViewPagerActivity"
+            android:label="View Image"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            tools:ignore="InnerclassSeparator" />
+
+        <service
+            android:name=".BroadcastDirectService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".NewBusMapDirectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Transportation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.crypedu.Activity.MenuActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.SignupActivity"
+            android:label="Add Employee"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.BookManageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Library"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.EmployeeManageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Employee Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.AttendanceActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Attendance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.ProfileActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.ActivityActivity"
+            android:label="Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.ResultActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Result"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.TimeTableActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Time Table"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.HomeWorkActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Home Work"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.SyllabusActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Syllabus"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.RequestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Communication"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.ClassWorkActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Class Work"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.TeacherCallingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Teacher Calling"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.WorkActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Assignment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.NoticeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Notice"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.BulletinsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Bulletins"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.ResetPasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Reset Password"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.AccountActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Pay Online"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.TeacherClassWorkActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Class Work"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.TeacherHomeWorkActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Home Work"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.TeacherNoticeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Notice"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.TeacherSyllabusActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Syllabus"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.ExaminationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Examination"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.MediwalletActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Medi Wallet"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.NotificationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Notification"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="NOTIFICATIONACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.crypedu.Activity.ViewRequestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="View communication"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.AttendanceLateReasonActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Late Attendance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+
+        <service
+            android:name="com.example.crypedu.Helper.PushService"
+            tools:ignore="InnerclassSeparator" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.example.crypedu.Helper.MyFirebaseMessagingService"
+            tools:ignore="ExportedService,InnerclassSeparator">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- Internet checking receiver -->
+        <receiver
+            android:name=".InternetCheckActivity"
+            android:enabled="true">
+            <intent-filter>
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.crypedu.Activity.DoctorChamberActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_doctor"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.PathologyLabActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_pathology"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.PathologyServiceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Pathology Center List"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.FirstTermActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_first_term"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.SecondTermActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_second_term"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".BusMapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Transportation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.crypedu.Activity.DemoMediwalletActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Medi Wallet"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.PathologyServiceActivity"
+            android:label="@string/title_activity_pathology_service"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.MediChamberActivity"
+            android:label="@string/title_activity_medi_chamber"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.MediDepartmentActivity"
+            android:label="@string/title_activity_medi_department"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.MediStoreDetailsActivity"
+            android:label="@string/title_activity_medi_store_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.DoctorActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_doctor"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.PathologyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_pathology"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.MedicalStoreActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_medical"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.PdfSyllabusActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Syllabus"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.HealthCardActivity"
+            android:label="@string/title_activity_health_card"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.TermsConditionActivity"
+            android:label="@string/title_activity_terms_condition"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.BDMActivity"
+            android:label="@string/title_activity_bdm"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".NewBusMapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Transportation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.crypedu.Activity.PdfSyllabusDirectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Syllabus"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.ViewRequestDirectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="View communication"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.ExamDirectSubActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Examination"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.NoticeDirectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Notice"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.ClassDirectWorkActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Class Work"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.TimeTableDirectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Time Table"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.HomeDirectWorkActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Home Work"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.AttendanceDirectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Attendance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.GalleyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Gallery"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.DaysListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Weekdays"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.PeriodListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.LiveVideoListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.PlayVideoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.SmartClassActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Online Classes"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+
+        <activity
+            android:name="com.example.crypedu.Activity.SubjectListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Subjects"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.ChapterListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.PdfListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.PdfOpenActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+
+        <activity
+            android:name="com.example.crypedu.Activity.OnlineTestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Online Test"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.SmallQuizTestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+
+       <!-- <activity
+            android:name="com.example.crypedu.Activity.SmallQuizTestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />-->
+
+        <activity
+            android:name="com.example.crypedu.Activity.ExamFinishActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="Exam Complete"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+
+        <activity
+            android:name="com.example.crypedu.Activity.OnlineTestResultActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="Result"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name="com.example.crypedu.Activity.SmallQuizViewSolutionActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="View Solution"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+
+        <activity
+            android:name="com.example.crypedu.Activity.ImageShowingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+
+      <activity
+        android:name="com.example.crypedu.Activity.AssignmentTopicListActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:label="Classroom Exam"
+        tools:ignore="InnerclassSeparator" />
+      <activity
+        android:name="com.example.crypedu.Activity.AssignmentHistoryListActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="portrait"
+        android:label="Assignment History"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="InnerclassSeparator" />
+      <activity
+        android:name="com.example.crypedu.Activity.AssignmentReplyActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="portrait"
+        android:label="Assignment Reply"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="InnerclassSeparator" />
+
+      <activity
+        android:name="com.example.crypedu.Activity.OnlineExamActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="portrait"
+        android:label="Subjects"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="InnerclassSeparator" />
+
+      <activity
+        android:name="com.example.crypedu.Activity.OnlineWrittenTestActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="portrait"
+        android:label="Online Written Test"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="InnerclassSeparator" />
+
+        <activity
+            android:name="com.example.crypedu.Activity.SingleOnlineTestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="Online Test Details"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+
+      <activity
+        android:name="com.example.crypedu.Activity.DriveDocumentsDownloadActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="portrait"
+        android:label="Online Written Test"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="InnerclassSeparator" />
+
+      <activity
+        android:name="com.example.crypedu.Activity.CustomYouTubePlayerActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="landscape"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="InnerclassSeparator" />
+
+      <activity
+        android:name="com.example.crypedu.Activity.QRCodeScannerActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar" />
+
+      <activity
+        android:name="com.example.crypedu.Activity.StoreDetailsActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar" />
+
+      <activity
+        android:name="com.example.crypedu.Activity.PaymentSuccessfulActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

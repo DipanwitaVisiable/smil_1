@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:background="@drawable/parents_meeting_back">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_meeting_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/interview"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/interview"
+        android:gravity="center"
+        android:text=" Date"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/parent_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_meeting_date"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/parents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Parents :"
+            android:textColor="@color/colorTeacherCalling"
+            android:textSize="16sp"
+            android:textStyle="italic|bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_parents"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_theme"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/parent_Layout"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView_teacher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_theme"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/teachers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text=" :Teacher"
+            android:textColor="@color/colorTeacherCalling"
+            android:textSize="16sp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+</RelativeLayout>

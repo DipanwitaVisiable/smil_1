@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="50"
+        android:id="@+id/class_spinner"
+        android:gravity="center"
+        android:dropDownSelector="@color/colorAccent"
+        android:background="@drawable/spinner_back"
+        >
+    </Spinner>
+    <androidx.legacy.widget.Space
+        android:layout_width="5dp"
+        android:layout_height="40dp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="50"
+        android:id="@+id/section_spinner"
+        android:gravity="center"
+        android:dropDownSelector="@color/colorAccent"
+        android:background="@drawable/spinner_back"
+        >
+    </Spinner>
+
+</LinearLayout>

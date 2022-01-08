@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="MyDarkToolbarStyle" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
+        <item name="background">?android:selectableItemBackground</item>
+        <item name="android:popupBackground">@color/colorWhite</item>
+        <item name="android:dropDownSelector">?android:selectableItemBackground</item>
+        <item name="android:divider">@color/colorA</item>
+        <item name="android:overlapAnchor">true</item>
+    </style>
+</resources>

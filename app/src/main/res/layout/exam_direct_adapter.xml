@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="5dp"
+    android:elevation="3dp"
+    android:layout_gravity="center"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/card_view">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Exam"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:id="@+id/textView"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

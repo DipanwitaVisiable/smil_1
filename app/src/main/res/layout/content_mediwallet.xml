@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/mediwallet_header"
+        android:orientation="vertical">
+
+        &lt;!&ndash;<android.support.v7.widget.AppCompatImageView&ndash;&gt;
+        &lt;!&ndash;android:id="@+id/iv_mediwallet_header"&ndash;&gt;
+        &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+        &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+        &lt;!&ndash;android:fitsSystemWindows="true"&ndash;&gt;
+        &lt;!&ndash;android:src="@drawable/mediwallet_header" />&ndash;&gt;
+    </LinearLayout>-->
+    <FrameLayout
+        android:id="@+id/frameLayout_slider"
+        android:layout_width="match_parent"
+        android:layout_height="190dp">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="fill_parent"
+            android:layout_height="190dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/doctorLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/back_of_single_doctor"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_doctor"
+                    app:civ_border_color="@color/colorTransparent"
+                    app:civ_border_width="1dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_doctor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="30dp"
+                    android:text="Doctor"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_name" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.30dp"
+                android:background="@color/colorBlack">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/pathologyLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/back_of_single_doctor"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_microscope"
+                    app:civ_border_color="@color/colorTransparent"
+                    app:civ_border_width="1dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_pathology"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="30dp"
+                    android:text="Pathology"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_name" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.30dp"
+                android:background="@color/colorBlack">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/medicalStoreLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/back_of_single_doctor"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_pills"
+                    app:civ_border_color="@color/colorTransparent"
+                    app:civ_border_width="1dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_medical_store"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="30dp"
+                    android:text="Medical Store"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_action_name" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.30dp"
+                android:background="@color/colorBlack" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back_of_single_doctor"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_wallet" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="0dp"
+                android:paddingStart="10dp"
+                android:text="Credit:  "
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_wallet_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textColor="@color/colorTeacherCalling"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/pbHeaderProgress"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:visibility="gone">
+
+            </ProgressBar>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:srcCompat="@android:drawable/ic_dialog_info" />
+
+        <!--<android.support.v7.widget.AppCompatTextView-->
+        <!--android:id="@+id/copyRight_textView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center|bottom"-->
+        <!--android:text="copyRight@2017SMI"-->
+        <!--android:textColor="@color/colorBlack" />-->
+    </LinearLayout>
+</LinearLayout>

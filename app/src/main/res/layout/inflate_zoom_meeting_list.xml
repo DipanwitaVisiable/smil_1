@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <!--<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@color/colorWhite"
+    android:elevation="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_4sdp">-->
+
+  <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@color/colorWhite"
+    android:elevation="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_4sdp">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/_10sdp">
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_meeting_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/tv_topic_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Meeting Name"
+          android:textColor="@color/colorBlack"
+          android:textSize="@dimen/_14sdp"
+          app:fontFamily="@font/bubblegumsans_regular" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/tv_class_of_the_year"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Class Name"
+          android:textColor="@color/colorBlack"
+          android:textSize="@dimen/_10sdp"
+          app:fontFamily="@font/bubblegumsans_regular" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/tv_meeting_date"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="2021-01-08"
+          android:textColor="@color/colorBlack"
+          android:textSize="@dimen/_10sdp"
+          app:fontFamily="@font/bubblegumsans_regular" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/tv_meeting_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="12:27:52"
+          android:textColor="@color/colorBlack"
+          android:textSize="@dimen/_10sdp"
+          app:fontFamily="@font/bubblegumsans_regular" />
+
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+      <Button
+        android:id="@+id/btn_join_meeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="JOIN"
+        android:background="@drawable/monday"
+        android:textColor="@color/colorWhite"
+        app:fontFamily="@font/bubblegumsans_regular" />
+    </RelativeLayout>
+
+  </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Dipanwita/Projects/SMIL_1/Crypedu/app/src/main/res/drawable/circle_white_button.xml" value="0.25277777777777777" />
+        <entry key="..\:/Dipanwita/Projects/SMIL_1/Crypedu/app/src/main/res/layout/activity_days_list.xml" value="0.23333333333333334" />
+        <entry key="..\:/Dipanwita/Projects/SMIL_1/Crypedu/app/src/main/res/layout/activity_first_term.xml" value="0.36666666666666664" />
+        <entry key="..\:/Dipanwita/Projects/SMIL_1/Crypedu/app/src/main/res/layout/activity_listview.xml" value="0.36666666666666664" />
+        <entry key="..\:/Dipanwita/Projects/SMIL_1/Crypedu/app/src/main/res/layout/activity_qr_code_scanner.xml" value="0.25" />
+        <entry key="..\:/Dipanwita/Projects/SMIL_1/Crypedu/app/src/main/res/layout/activity_smart_class.xml" value="0.25" />
+        <entry key="..\:/Dipanwita/Projects/SMIL_1/Crypedu/app/src/main/res/layout/activity_store_details.xml" value="0.25" />
+        <entry key="..\:/Dipanwita/Projects/SMIL_1/Crypedu/app/src/main/res/layout/activity_subject_list.xml" value="0.25" />
+        <entry key="..\:/Dipanwita/Projects/SMIL_1/Crypedu/app/src/main/res/layout/item_small_quiz_solution_answer.xml" value="0.22" />
+        <entry key="..\:/Dipanwita/Projects/SMIL_1/Crypedu/app/src/main/res/layout/item_subject_list_adapter.xml" value="0.22" />
+        <entry key="..\:/Dipanwita/Projects/SMIL_1/Crypedu/app/src/main/res/layout/item_time_table_adapter.xml" value="0.36666666666666664" />
+        <entry key="..\:/Dipanwita/Projects/SMIL_1/Crypedu/app/src/main/res/layout/payment_successful_dialog.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

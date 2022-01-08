@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            >
+            <Button
+                android:id="@+id/pickDateBn"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/spinner_back"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Pick date"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/attendance_search"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                app:fabSize="mini"
+                android:src="@drawable/ic_search"
+                android:elevation="5dp"
+                />
+        </LinearLayout>
+        <include layout="@layout/two_spinner_direct" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:id="@+id/add_layout"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone">
+
+           <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:textAllCaps="false"
+                android:text="Class"
+                android:textStyle="bold"
+                android:textColor="@color/colorW"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:textAllCaps="false"
+                android:text="Section"
+                android:textStyle="bold"
+                android:textColor="@color/colorP"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:textAllCaps="false"
+                android:text="Total Student"
+                android:textStyle="bold"
+                android:textColor="@color/colorB"
+                android:gravity="center"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:textAllCaps="false"
+                android:text="Present"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:layout_gravity="center" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:textAllCaps="false"
+                android:text="Percentage"
+                android:textStyle="bold"
+                android:textColor="#196c39"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/attendance_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

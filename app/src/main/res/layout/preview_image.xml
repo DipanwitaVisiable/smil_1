@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <com.jsibbold.zoomage.ZoomageView
+        android:layout_marginTop="@dimen/_30sdp"
+        android:id="@+id/iv_preview_image"
+        android:layout_width="wrap_content"
+        android:src="@drawable/progress_loading"
+        android:layout_height="wrap_content"
+        app:zoomage_restrictBounds="false"
+        app:zoomage_animateOnReset="true"
+        app:zoomage_autoResetMode="UNDER"
+        app:zoomage_autoCenter="true"
+        android:layout_centerInParent="true"
+        app:zoomage_zoomable="true"
+        app:zoomage_translatable="true"
+        app:zoomage_minScale="0.6"
+        app:zoomage_maxScale="8" />
+
+
+    <Button android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:id="@+id/btnIvClose"
+        android:text="close"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
